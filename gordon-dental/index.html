@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gordon Family Dental | Dentist in Lehi, UT | Same-Day CEREC Crowns</title>
+  <meta name="description" content="Dr. David Gordon & team offer family dentistry in Lehi, UT. Same-day CEREC crowns, digital X-rays, and personalized care. New patients welcome! (801) 766-6344">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --teal: #0d9488;
+      --teal-dark: #0f766e;
+      --teal-light: #5eead4;
+      --navy: #1e3a5f;
+      --gold: #d4a84b;
+      --cream: #fefdfb;
+      --white: #ffffff;
+      --gray-100: #f8fafc;
+      --gray-600: #64748b;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--cream);
+      color: #334155;
+      line-height: 1.7;
+    }
+    
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    
+    /* Top Bar */
+    .top-bar {
+      background: var(--navy);
+      color: white;
+      padding: 0.6rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+    }
+    
+    .top-bar a {
+      color: var(--teal-light);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    /* Navigation */
+    nav {
+      background: var(--white);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    
+    .logo-icon {
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+    
+    .logo-text h1 {
+      font-size: 1.3rem;
+      color: var(--navy);
+      font-weight: 600;
+    }
+    
+    .logo-text span {
+      font-size: 0.75rem;
+      color: var(--gray-600);
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    
+    .nav-links a {
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: color 0.3s;
+    }
+    
+    .nav-links a:hover { color: var(--teal); }
+    
+    .nav-cta {
+      background: var(--teal);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+    
+    .nav-cta:hover {
+      background: var(--teal-dark);
+      transform: translateY(-2px);
+    }
+    
+    /* Hero */
+    .hero {
+      padding: 5rem 2rem;
+      background: linear-gradient(135deg, var(--cream) 0%, #e0f2fe 100%);
+      position: relative;
+    }
+    
+    .hero-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(13, 148, 136, 0.1);
+      border: 1px solid var(--teal);
+      color: var(--teal-dark);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+    
+    .hero h2 {
+      font-size: 3.2rem;
+      color: var(--navy);
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+    
+    .hero h2 span { color: var(--teal); }
+    
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--gray-600);
+      margin-bottom: 2rem;
+    }
+    
+    .hero-ctas {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    .btn {
+      padding: 1rem 2rem;
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .btn-primary {
+      background: var(--teal);
+      color: white;
+    }
+    
+    .btn-primary:hover {
+      background: var(--teal-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(13, 148, 136, 0.3);
+    }
+    
+    .btn-secondary {
+      background: var(--white);
+      color: var(--navy);
+      border: 2px solid var(--navy);
+    }
+    
+    .btn-secondary:hover {
+      background: var(--navy);
+      color: white;
+    }
+    
+    .hero-features {
+      display: flex;
+      gap: 2rem;
+    }
+    
+    .hero-feature {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      color: var(--navy);
+    }
+    
+    .hero-feature span {
+      color: var(--teal);
+      font-size: 1.2rem;
+    }
+    
+    .hero-image {
+      background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%);
+      border-radius: 20px;
+      height: 450px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 8rem;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    /* Services */
+    .services {
+      padding: 5rem 2rem;
+      background: var(--white);
+    }
+    
+    .section-header {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 3rem;
+    }
+    
+    .section-tag {
+      color: var(--teal);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-size: 0.8rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .section-header h2 {
+      font-size: 2.5rem;
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+    
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .service-card {
+      background: var(--gray-100);
+      padding: 2rem;
+      border-radius: 16px;
+      transition: all 0.3s;
+      border: 2px solid transparent;
+    }
+    
+    .service-card:hover {
+      background: var(--white);
+      border-color: var(--teal);
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+    }
+    
+    .service-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      margin-bottom: 1.25rem;
+    }
+    
+    .service-card h3 {
+      font-size: 1.25rem;
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+    }
+    
+    .service-card p {
+      color: var(--gray-600);
+      font-size: 0.95rem;
+    }
+    
+    /* Technology */
+    .technology {
+      padding: 5rem 2rem;
+      background: var(--navy);
+    }
+    
+    .technology .section-header h2 { color: white; }
+    .technology .section-tag { color: var(--teal-light); }
+    
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    .tech-item {
+      text-align: center;
+      color: white;
+    }
+    
+    .tech-icon {
+      width: 80px;
+      height: 80px;
+      background: rgba(94, 234, 212, 0.15);
+      border: 2px solid var(--teal-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      margin: 0 auto 1rem;
+    }
+    
+    .tech-item h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .tech-item p {
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+    
+    /* Team */
+    .team {
+      padding: 5rem 2rem;
+      background: var(--cream);
+    }
+    
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .team-card {
+      text-align: center;
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+    
+    .team-photo {
+      width: 120px;
+      height: 120px;
+      background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      margin: 0 auto 1rem;
+    }
+    
+    .team-card h3 {
+      font-size: 1.2rem;
+      color: var(--navy);
+      margin-bottom: 0.25rem;
+    }
+    
+    .team-card span {
+      color: var(--teal);
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    
+    /* CTA */
+    .cta {
+      padding: 5rem 2rem;
+      background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%);
+      text-align: center;
+    }
+    
+    .cta h2 {
+      font-size: 2.5rem;
+      color: white;
+      margin-bottom: 1rem;
+    }
+    
+    .cta p {
+      font-size: 1.2rem;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 2rem;
+    }
+    
+    .cta .btn-primary {
+      background: var(--navy);
+    }
+    
+    .cta .btn-primary:hover {
+      background: #0f2744;
+    }
+    
+    /* Footer */
+    footer {
+      background: var(--navy);
+      color: white;
+      padding: 3rem 2rem 1.5rem;
+    }
+    
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto 2rem;
+    }
+    
+    .footer-col h4 {
+      color: var(--teal-light);
+      margin-bottom: 1rem;
+      font-family: 'Playfair Display', serif;
+    }
+    
+    .footer-col p, .footer-col a {
+      color: rgba(255,255,255,0.8);
+      font-size: 0.9rem;
+      line-height: 1.8;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .footer-col a:hover { color: var(--teal-light); }
+    
+    .footer-bottom {
+      text-align: center;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.5);
+      font-size: 0.85rem;
+    }
+    
+    /* Mobile */
+    @media (max-width: 768px) {
+      .hero-content { grid-template-columns: 1fr; }
+      .hero-image { display: none; }
+      .hero h2 { font-size: 2.2rem; }
+      .tech-grid, .team-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+    
+    /* Preview Banner */
+    .preview-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(90deg, #7c3aed, #4f46e5);
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      z-index: 9999;
+      font-weight: 600;
+    }
+    
+    .preview-banner a { color: white; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="preview-banner">
+    🎨 PREVIEW SITE by GullStack — <a href="mailto:hello@gullstack.com">Let's build this for real →</a>
+  </div>
+
+  <div class="top-bar">
+    <span>🦷 Accepting New Patients • 1020 S 1100 W Suite A, Lehi, UT</span>
+    <a href="tel:8017666344">📞 (801) 766-6344</a>
+  </div>
+
+  <nav>
+    <div class="logo">
+      <div class="logo-icon">🦷</div>
+      <div class="logo-text">
+        <h1>Gordon Family Dental</h1>
+        <span>Lehi, Utah</span>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#technology">Technology</a></li>
+      <li><a href="#team">Our Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="tel:8017666344" class="nav-cta">Book Appointment</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div>
+        <div class="hero-badge">✨ Now Offering Same-Day Crowns</div>
+        <h2>Exceptional Dental Care for <span>Your Whole Family</span></h2>
+        <p>Dr. David Gordon, Dr. Parker Brown, and Dr. Nathan Criddle provide personalized, comfortable dentistry using the latest technology. See why Lehi families trust us with their smiles.</p>
+        <div class="hero-ctas">
+          <a href="tel:8017666344" class="btn btn-primary">📞 (801) 766-6344</a>
+          <a href="#services" class="btn btn-secondary">Our Services</a>
+        </div>
+        <div class="hero-features">
+          <div class="hero-feature"><span>✓</span> Same-Day CEREC Crowns</div>
+          <div class="hero-feature"><span>✓</span> Digital X-Rays</div>
+          <div class="hero-feature"><span>✓</span> Family Owned</div>
+        </div>
+      </div>
+      <div class="hero-image">
+        😁
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="section-header">
+      <div class="section-tag">Our Services</div>
+      <h2>Comprehensive Dental Care</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🪥</div>
+        <h3>Preventive Care</h3>
+        <p>Regular cleanings, exams, and X-rays to keep your smile healthy and catch issues early.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">👑</div>
+        <h3>Same-Day Crowns</h3>
+        <p>CEREC technology means beautiful, durable crowns in a single visit. No temporary crown needed.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">✨</div>
+        <h3>Cosmetic Dentistry</h3>
+        <p>Teeth whitening, veneers, and smile makeovers to give you the confidence you deserve.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔧</div>
+        <h3>Restorative Care</h3>
+        <p>Fillings, root canals, and extractions performed with precision and comfort.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">😬</div>
+        <h3>TMJ Treatment</h3>
+        <p>Relief for jaw pain, headaches, and teeth grinding. Dr. Gordon specializes in TMJ care.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">👶</div>
+        <h3>Children's Dentistry</h3>
+        <p>Gentle, patient care that makes dental visits fun for your little ones.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="technology" id="technology">
+    <div class="section-header">
+      <div class="section-tag">Advanced Technology</div>
+      <h2>Modern Dentistry, Better Results</h2>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-item">
+        <div class="tech-icon">📷</div>
+        <h3>Digital X-Rays</h3>
+        <p>90% less radiation, instant results</p>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon">🖥️</div>
+        <h3>CEREC CAD/CAM</h3>
+        <p>Same-day crowns & restorations</p>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon">🔍</div>
+        <h3>Cone Beam 3D</h3>
+        <p>Detailed imaging for complex cases</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="team" id="team">
+    <div class="section-header">
+      <div class="section-tag">Meet Your Dentists</div>
+      <h2>Experienced, Caring Professionals</h2>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-photo">👨‍⚕️</div>
+        <h3>Dr. David Gordon</h3>
+        <span>General & TMJ Dentistry</span>
+      </div>
+      <div class="team-card">
+        <div class="team-photo">👨‍⚕️</div>
+        <h3>Dr. Parker Brown</h3>
+        <span>General Dentistry</span>
+      </div>
+      <div class="team-card">
+        <div class="team-photo">👨‍⚕️</div>
+        <h3>Dr. Nathan Criddle</h3>
+        <span>General Dentistry</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready for Your Best Smile?</h2>
+    <p>New patients welcome. Call today to schedule your appointment.</p>
+    <a href="tel:8017666344" class="btn btn-primary">📞 (801) 766-6344</a>
+  </section>
+
+  <footer id="contact">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Gordon Family Dental</h4>
+        <p>Family-owned dental practice providing exceptional care in Lehi, Utah since day one.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#">Cleanings & Exams</a>
+        <a href="#">Same-Day Crowns</a>
+        <a href="#">Cosmetic Dentistry</a>
+        <a href="#">TMJ Treatment</a>
+      </div>
+      <div class="footer-col">
+        <h4>Location</h4>
+        <p>1020 S 1100 W Suite A</p>
+        <p>Lehi, UT 84043</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>📞 (801) 766-6344</p>
+        <p>🕐 Mon-Thu: 8am-5pm</p>
+        <p>🕐 Fri: By appointment</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Gordon Family Dental. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

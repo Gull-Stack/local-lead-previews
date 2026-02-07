@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RG Plumbing Inc. | South Jordan's Trusted Plumber Since 1985</title>
+  <meta name="description" content="Family-owned plumbing company serving South Jordan, Riverton & Herriman since 1985. Emergency repairs, water heaters, drain cleaning. Call (801) 446-0520.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #1a365d;
+      --navy-dark: #0f2744;
+      --blue: #2b6cb0;
+      --blue-light: #4299e1;
+      --orange: #ed8936;
+      --orange-dark: #dd6b20;
+      --white: #ffffff;
+      --gray-100: #f7fafc;
+      --gray-200: #edf2f7;
+      --gray-600: #718096;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--white);
+      color: #2d3748;
+      line-height: 1.6;
+    }
+    
+    /* Top Bar */
+    .top-bar {
+      background: var(--navy-dark);
+      color: white;
+      padding: 0.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+    }
+    
+    .top-bar a {
+      color: var(--orange);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    /* Navigation */
+    nav {
+      background: var(--navy);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    
+    .logo-icon {
+      width: 50px;
+      height: 50px;
+      background: var(--orange);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+    
+    .logo-text {
+      color: white;
+    }
+    
+    .logo-text h1 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+    
+    .logo-text span {
+      font-size: 0.75rem;
+      color: var(--gray-200);
+      font-weight: 500;
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: color 0.3s;
+    }
+    
+    .nav-links a:hover { color: var(--orange); }
+    
+    .nav-cta {
+      background: var(--orange);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-weight: 700;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.3s;
+    }
+    
+    .nav-cta:hover {
+      background: var(--orange-dark);
+      transform: translateY(-2px);
+    }
+    
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
+      padding: 5rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero-pattern {
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    
+    .hero-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+    }
+    
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(237, 137, 54, 0.2);
+      border: 1px solid var(--orange);
+      color: var(--orange);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+    
+    .hero h2 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: white;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+    
+    .hero h2 span { color: var(--orange); }
+    
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--gray-200);
+      margin-bottom: 2rem;
+    }
+    
+    .hero-ctas {
+      display: flex;
+      gap: 1rem;
+    }
+    
+    .btn {
+      padding: 1rem 2rem;
+      font-weight: 700;
+      font-size: 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .btn-primary {
+      background: var(--orange);
+      color: white;
+    }
+    
+    .btn-primary:hover {
+      background: var(--orange-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(237, 137, 54, 0.3);
+    }
+    
+    .btn-secondary {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+    
+    .btn-secondary:hover {
+      background: white;
+      color: var(--navy);
+    }
+    
+    .hero-trust {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .trust-item {
+      text-align: center;
+      color: white;
+    }
+    
+    .trust-number {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--orange);
+    }
+    
+    .trust-label {
+      font-size: 0.8rem;
+      color: var(--gray-200);
+    }
+    
+    .hero-image {
+      background: var(--blue);
+      border-radius: 12px;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 8rem;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero-image::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(45deg, var(--blue) 0%, var(--blue-light) 100%);
+    }
+    
+    .hero-image span {
+      position: relative;
+      z-index: 1;
+    }
+    
+    /* Services */
+    .services {
+      padding: 5rem 2rem;
+      background: var(--gray-100);
+    }
+    
+    .section-header {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 3rem;
+    }
+    
+    .section-tag {
+      color: var(--orange);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .section-header h2 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+    
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .service-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      transition: all 0.3s;
+      border: 2px solid transparent;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--orange);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+    }
+    
+    .service-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--orange) 0%, var(--orange-dark) 100%);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .service-card h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 0.75rem;
+    }
+    
+    .service-card p {
+      color: var(--gray-600);
+      font-size: 0.95rem;
+    }
+    
+    /* Why Choose Us */
+    .why-us {
+      padding: 5rem 2rem;
+      background: var(--navy);
+    }
+    
+    .why-us .section-header h2 { color: white; }
+    .why-us .section-tag { color: var(--orange); }
+    
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .why-item {
+      text-align: center;
+      color: white;
+    }
+    
+    .why-icon {
+      width: 80px;
+      height: 80px;
+      background: rgba(237, 137, 54, 0.15);
+      border: 2px solid var(--orange);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      margin: 0 auto 1rem;
+    }
+    
+    .why-item h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    
+    .why-item p {
+      font-size: 0.9rem;
+      color: var(--gray-200);
+    }
+    
+    /* CTA Banner */
+    .cta-banner {
+      background: linear-gradient(135deg, var(--orange) 0%, var(--orange-dark) 100%);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    
+    .cta-banner h2 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: white;
+      margin-bottom: 1rem;
+    }
+    
+    .cta-banner p {
+      font-size: 1.2rem;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 2rem;
+    }
+    
+    .cta-banner .btn-primary {
+      background: var(--navy);
+    }
+    
+    .cta-banner .btn-primary:hover {
+      background: var(--navy-dark);
+    }
+    
+    /* Reviews */
+    .reviews {
+      padding: 5rem 2rem;
+      background: var(--gray-100);
+    }
+    
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    .review-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+    
+    .review-stars {
+      color: #fbbf24;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .review-card p {
+      color: var(--gray-600);
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+    
+    .review-author {
+      font-weight: 700;
+      color: var(--navy);
+    }
+    
+    /* Footer */
+    footer {
+      background: var(--navy-dark);
+      color: white;
+      padding: 3rem 2rem 1.5rem;
+    }
+    
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto 2rem;
+    }
+    
+    .footer-col h4 {
+      color: var(--orange);
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    
+    .footer-col p, .footer-col a {
+      color: var(--gray-200);
+      font-size: 0.9rem;
+      line-height: 1.8;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .footer-col a:hover { color: var(--orange); }
+    
+    .footer-bottom {
+      text-align: center;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: var(--gray-600);
+      font-size: 0.85rem;
+    }
+    
+    /* Mobile */
+    @media (max-width: 768px) {
+      .hero-content { grid-template-columns: 1fr; }
+      .hero-image { display: none; }
+      .hero h2 { font-size: 2.5rem; }
+      .why-grid { grid-template-columns: repeat(2, 1fr); }
+      .nav-links { display: none; }
+    }
+    
+    /* Preview Banner */
+    .preview-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(90deg, #7c3aed, #4f46e5);
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      z-index: 9999;
+      font-weight: 600;
+    }
+    
+    .preview-banner a { color: white; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="preview-banner">
+    🎨 PREVIEW SITE by GullStack — <a href="mailto:hello@gullstack.com">Let's build this for real →</a>
+  </div>
+
+  <div class="top-bar">
+    <span>🔧 Family-Owned Since 1985 • Serving South Jordan, Riverton & Herriman</span>
+    <a href="tel:8014460520">📞 (801) 446-0520</a>
+  </div>
+
+  <nav>
+    <div class="logo">
+      <div class="logo-icon">🔧</div>
+      <div class="logo-text">
+        <h1>RG PLUMBING</h1>
+        <span>Trusted Since 1985</span>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="tel:8014460520" class="nav-cta">📞 Call Now</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-pattern"></div>
+    <div class="hero-content">
+      <div>
+        <div class="hero-badge">⭐ 40 Years of Trusted Service</div>
+        <h2>South Jordan's <span>Most Trusted</span> Plumber</h2>
+        <p>Family-owned since 1985. We treat every home like our own — with honest pricing, quality work, and the respect your family deserves.</p>
+        <div class="hero-ctas">
+          <a href="tel:8014460520" class="btn btn-primary">📞 (801) 446-0520</a>
+          <a href="#services" class="btn btn-secondary">View Services</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <div class="trust-number">40+</div>
+            <div class="trust-label">Years Experience</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-number">5,000+</div>
+            <div class="trust-label">Happy Customers</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-number">100%</div>
+            <div class="trust-label">Satisfaction</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <span>🔧</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="section-header">
+      <div class="section-tag">Our Services</div>
+      <h2>Expert Plumbing Solutions</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🚿</div>
+        <h3>Drain Cleaning</h3>
+        <p>Clogged drains? We'll clear them fast with professional equipment and get your water flowing again.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔥</div>
+        <h3>Water Heaters</h3>
+        <p>Installation, repair, and replacement of traditional and tankless water heaters. Same-day service available.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🚽</div>
+        <h3>Toilet Repair</h3>
+        <p>Running, leaking, or clogged toilets fixed quickly. We carry parts for all major brands.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">💧</div>
+        <h3>Leak Detection</h3>
+        <p>Hidden leaks found and fixed before they cause major damage. Advanced detection technology.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🏠</div>
+        <h3>Repiping</h3>
+        <p>Old pipes replaced with modern materials. Increase water pressure and prevent future leaks.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🚨</div>
+        <h3>Emergency Service</h3>
+        <p>Plumbing emergencies don't wait, and neither do we. Fast response when you need it most.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-us">
+    <div class="section-header">
+      <div class="section-tag">Why RG Plumbing</div>
+      <h2>The RG Difference</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-icon">👨‍👩‍👧‍👦</div>
+        <h3>Family Owned</h3>
+        <p>40 years of family values in every job we do</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">💰</div>
+        <h3>Honest Pricing</h3>
+        <p>No hidden fees or surprise charges</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">⚡</div>
+        <h3>Fast Response</h3>
+        <p>Same-day service for emergencies</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">✅</div>
+        <h3>Guaranteed Work</h3>
+        <p>100% satisfaction on every job</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <h2>Plumbing Problem? We're On It.</h2>
+    <p>Call now for fast, honest service from South Jordan's most trusted plumber.</p>
+    <a href="tel:8014460520" class="btn btn-primary">📞 (801) 446-0520</a>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <div class="section-header">
+      <div class="section-tag">Customer Reviews</div>
+      <h2>What Our Neighbors Say</h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>"Called at 7am with a burst pipe. They were here by 8:30 and had it fixed before noon. Fair price, great work. This is who I'll call from now on."</p>
+        <div class="review-author">— Mike R., South Jordan</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>"They've been our family plumber for 15 years. Honest, reliable, and they actually show up when they say they will. That's rare these days."</p>
+        <div class="review-author">— Sarah T., Riverton</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>"Replaced our water heater same day. The tech explained everything, cleaned up after, and the price was exactly what they quoted. Highly recommend!"</p>
+        <div class="review-author">— David L., Herriman</div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>RG Plumbing Inc.</h4>
+        <p>Family-owned and operated since 1985. Serving South Jordan, Riverton, Herriman and surrounding communities.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#">Drain Cleaning</a>
+        <a href="#">Water Heaters</a>
+        <a href="#">Leak Repair</a>
+        <a href="#">Emergency Service</a>
+      </div>
+      <div class="footer-col">
+        <h4>Service Areas</h4>
+        <p>South Jordan</p>
+        <p>Riverton</p>
+        <p>Herriman</p>
+        <p>Bluffdale</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>📞 (801) 446-0520</p>
+        <p>📧 info@rgplumbing.com</p>
+        <p>🕐 Mon-Fri: 7am-6pm</p>
+        <p>🚨 Emergency: 24/7</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 RG Plumbing Inc. All rights reserved. Licensed & Insured.
+    </div>
+  </footer>
+</body>
+</html>
