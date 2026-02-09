@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hidden Valley Eye Care & Framed Optical | Eye Doctor in Draper, UT</title>
+  <meta name="description" content="Comprehensive eye exams, contact lenses & designer frames in Draper, Utah. Dr. Jason Mackay provides personalized vision care. Book your appointment today!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1e3a5f;
+      --primary-dark: #0f2744;
+      --accent: #4fb3bf;
+      --accent-light: #7fd4de;
+      --gold: #c9a962;
+      --white: #ffffff;
+      --gray-50: #f8fafc;
+      --gray-100: #f1f5f9;
+      --gray-200: #e2e8f0;
+      --gray-600: #475569;
+      --gray-800: #1e293b;
+      --gradient: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--gray-800);
+      line-height: 1.6;
+    }
+    
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    
+    /* ===== TOP BAR ===== */
+    .top-bar {
+      background: var(--primary-dark);
+      color: white;
+      padding: 10px 0;
+      font-size: 0.85rem;
+    }
+    .top-bar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .top-bar a {
+      color: var(--accent-light);
+      font-weight: 500;
+    }
+    .top-bar-right {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+    
+    /* ===== HEADER ===== */
+    .header {
+      background: white;
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+    }
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--gradient);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo-icon svg {
+      width: 28px;
+      height: 28px;
+      fill: white;
+    }
+    .logo-text h1 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1.2;
+    }
+    .logo-text span {
+      font-size: 0.75rem;
+      color: var(--gray-600);
+      font-weight: 500;
+    }
+    
+    .nav {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+    .nav a {
+      font-weight: 600;
+      color: var(--gray-600);
+      transition: color 0.2s;
+    }
+    .nav a:hover { color: var(--primary); }
+    
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: var(--gradient);
+      color: white;
+      box-shadow: 0 4px 20px rgba(79, 179, 191, 0.35);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 30px rgba(79, 179, 191, 0.45);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+    }
+    .btn-outline:hover {
+      background: var(--primary);
+      color: white;
+    }
+    
+    @media (max-width: 768px) {
+      .nav { display: none; }
+      .top-bar-right { display: none; }
+    }
+    
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(135deg, var(--gray-50) 0%, var(--gray-100) 100%);
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 60%;
+      height: 200%;
+      background: var(--gradient);
+      opacity: 0.05;
+      border-radius: 50%;
+      transform: rotate(-15deg);
+    }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(79, 179, 191, 0.1);
+      color: var(--accent);
+      padding: 8px 16px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+      border: 1px solid rgba(79, 179, 191, 0.2);
+    }
+    .hero h2 {
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      color: var(--primary-dark);
+      margin-bottom: 20px;
+    }
+    .hero h2 span {
+      color: var(--accent);
+    }
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--gray-600);
+      margin-bottom: 32px;
+      max-width: 500px;
+    }
+    .hero-ctas {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .hero-stats {
+      display: flex;
+      gap: 40px;
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid var(--gray-200);
+    }
+    .stat h3 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+    .stat p {
+      font-size: 0.9rem;
+      color: var(--gray-600);
+      margin: 0;
+    }
+    
+    .hero-image {
+      position: relative;
+      z-index: 2;
+    }
+    .hero-image-main {
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 25px 80px rgba(30, 58, 95, 0.2);
+    }
+    .hero-image-main img {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+    }
+    .hero-image-float {
+      position: absolute;
+      bottom: -30px;
+      left: -30px;
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .hero-image-float img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .hero-float-text h4 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .hero-float-text p {
+      font-size: 0.8rem;
+      color: var(--gray-600);
+      margin: 0;
+    }
+    .stars {
+      color: #f59e0b;
+      font-size: 0.9rem;
+    }
+    
+    @media (max-width: 900px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .hero p { margin-left: auto; margin-right: auto; }
+      .hero-ctas { justify-content: center; }
+      .hero-stats { justify-content: center; }
+      .hero-image { order: -1; }
+      .hero-image-float { left: 50%; transform: translateX(-50%); }
+    }
+    
+    /* ===== SERVICES ===== */
+    .services {
+      padding: 100px 0;
+      background: white;
+    }
+    .section-header {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 60px;
+    }
+    .section-badge {
+      display: inline-block;
+      background: rgba(79, 179, 191, 0.1);
+      color: var(--accent);
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
+    }
+    .section-header h2 {
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 16px;
+    }
+    .section-header p {
+      color: var(--gray-600);
+      font-size: 1.1rem;
+    }
+    
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+    }
+    .service-card {
+      background: var(--gray-50);
+      border-radius: 20px;
+      padding: 40px 32px;
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+    }
+    .service-card:hover {
+      background: white;
+      border-color: var(--gray-200);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+      transform: translateY(-4px);
+    }
+    .service-icon {
+      width: 64px;
+      height: 64px;
+      background: var(--gradient);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+    .service-icon svg {
+      width: 32px;
+      height: 32px;
+      fill: white;
+    }
+    .service-card h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 12px;
+    }
+    .service-card p {
+      color: var(--gray-600);
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+    .service-card a {
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .service-card a:hover { gap: 10px; }
+    
+    /* ===== ABOUT DOCTOR ===== */
+    .about {
+      padding: 100px 0;
+      background: var(--primary-dark);
+      color: white;
+    }
+    .about-inner {
+      display: grid;
+      grid-template-columns: 400px 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .about-image {
+      position: relative;
+    }
+    .about-image img {
+      border-radius: 24px;
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+    .about-badge {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      background: var(--gold);
+      color: var(--primary-dark);
+      padding: 20px;
+      border-radius: 16px;
+      text-align: center;
+    }
+    .about-badge h4 {
+      font-size: 2rem;
+      font-weight: 800;
+    }
+    .about-badge p {
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .about-content h2 {
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 800;
+      margin-bottom: 24px;
+    }
+    .about-content h2 span {
+      color: var(--accent-light);
+    }
+    .about-content p {
+      color: rgba(255,255,255,0.8);
+      font-size: 1.05rem;
+      margin-bottom: 20px;
+    }
+    .about-credentials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 32px;
+    }
+    .credential {
+      background: rgba(255,255,255,0.1);
+      padding: 12px 20px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    
+    @media (max-width: 900px) {
+      .about-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .about-image { max-width: 400px; margin: 0 auto; }
+      .about-badge { right: 20px; }
+      .about-credentials { justify-content: center; }
+    }
+    
+    /* ===== REVIEWS ===== */
+    .reviews {
+      padding: 100px 0;
+      background: var(--gray-50);
+    }
+    .reviews-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 48px;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    .reviews-score {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .score-big {
+      font-size: 4rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+    }
+    .score-details p {
+      margin: 0;
+      color: var(--gray-600);
+    }
+    .score-details .stars {
+      font-size: 1.5rem;
+    }
+    
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+    .review-card {
+      background: white;
+      padding: 32px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    }
+    .review-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
+    .reviewer {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .reviewer-avatar {
+      width: 48px;
+      height: 48px;
+      background: var(--gradient);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+    .reviewer-info h4 {
+      font-weight: 700;
+      color: var(--primary-dark);
+    }
+    .reviewer-info p {
+      font-size: 0.8rem;
+      color: var(--gray-600);
+      margin: 0;
+    }
+    .review-card blockquote {
+      color: var(--gray-600);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      font-style: italic;
+    }
+    
+    /* ===== BRANDS ===== */
+    .brands {
+      padding: 80px 0;
+      background: white;
+      text-align: center;
+    }
+    .brands h3 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gray-600);
+      margin-bottom: 40px;
+    }
+    .brands-grid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 48px;
+      opacity: 0.6;
+    }
+    .brand-logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--gray-800);
+    }
+    
+    /* ===== INSURANCE ===== */
+    .insurance {
+      padding: 60px 0;
+      background: var(--gray-100);
+    }
+    .insurance-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 32px;
+    }
+    .insurance h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+    }
+    .insurance-logos {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .insurance-logo {
+      background: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 700;
+      color: var(--gray-600);
+      font-size: 0.9rem;
+    }
+    
+    /* ===== CTA ===== */
+    .cta {
+      padding: 100px 0;
+      background: var(--gradient);
+      text-align: center;
+      color: white;
+    }
+    .cta h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+    .cta p {
+      font-size: 1.15rem;
+      opacity: 0.9;
+      margin-bottom: 32px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cta .btn {
+      background: white;
+      color: var(--primary);
+    }
+    .cta .btn:hover {
+      background: var(--gray-100);
+    }
+    
+    /* ===== LOCATION ===== */
+    .location {
+      padding: 80px 0;
+      background: white;
+    }
+    .location-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+    .location-info h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 24px;
+    }
+    .location-details {
+      margin-bottom: 32px;
+    }
+    .location-item {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .location-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--gray-100);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .location-icon svg {
+      width: 24px;
+      height: 24px;
+      fill: var(--primary);
+    }
+    .location-item h4 {
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 4px;
+    }
+    .location-item p {
+      color: var(--gray-600);
+      margin: 0;
+      font-size: 0.95rem;
+    }
+    .location-item a {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    
+    .hours-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px 24px;
+    }
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--gray-100);
+    }
+    .hours-row span:first-child {
+      font-weight: 600;
+      color: var(--gray-800);
+    }
+    .hours-row span:last-child {
+      color: var(--gray-600);
+    }
+    
+    .location-map {
+      border-radius: 20px;
+      overflow: hidden;
+      height: 100%;
+      min-height: 400px;
+    }
+    .location-map iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    
+    @media (max-width: 900px) {
+      .location-inner { grid-template-columns: 1fr; }
+      .hours-grid { grid-template-columns: 1fr; }
+    }
+    
+    /* ===== FOOTER ===== */
+    .footer {
+      background: var(--primary-dark);
+      color: white;
+      padding: 60px 0 30px;
+    }
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+    .footer-brand h3 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+    .footer-brand p {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+    }
+    .footer h4 {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 20px;
+      color: var(--accent-light);
+    }
+    .footer ul li {
+      margin-bottom: 12px;
+    }
+    .footer ul li a {
+      color: rgba(255,255,255,0.7);
+      transition: color 0.2s;
+    }
+    .footer ul li a:hover {
+      color: white;
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .footer-bottom p {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.85rem;
+    }
+    
+    @media (max-width: 768px) {
+      .footer-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+    
+    /* ===== MOBILE CTA STICKY ===== */
+    .mobile-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: white;
+      padding: 16px 24px;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+      z-index: 99;
+    }
+    .mobile-cta .btn {
+      width: 100%;
+      justify-content: center;
+    }
+    
+    @media (max-width: 768px) {
+      .mobile-cta { display: block; }
+      body { padding-bottom: 80px; }
+    }
+
+    /* ===== PREVIEW BANNER ===== */
+    .preview-banner {
+      background: linear-gradient(90deg, #ff6b6b, #feca57);
+      color: white;
+      text-align: center;
+      padding: 12px;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Preview Banner -->
+  <div class="preview-banner">
+    🎨 PREVIEW — GullStack Design Concept for Hidden Valley Eye Care
+  </div>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-inner">
+        <div>📍 1147 Draper Pkwy, Draper, UT 84020</div>
+        <div class="top-bar-right">
+          <a href="tel:+18014141234">📞 (801) 414-1234</a>
+          <span>Mon-Fri: 9am-5:30pm</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="/" class="logo">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+          </div>
+          <div class="logo-text">
+            <h1>Hidden Valley Eye Care</h1>
+            <span>& Framed Optical</span>
+          </div>
+        </a>
+        
+        <nav class="nav">
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#location">Location</a>
+          <a href="#" class="btn btn-primary">Book Appointment</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge">
+            ⭐ Draper's Trusted Eye Care Since 2010
+          </div>
+          <h2>Clear Vision.<br><span>Personal Care.</span></h2>
+          <p>Experience comprehensive eye exams, premium contact lenses, and designer frames — all with the personalized attention you deserve.</p>
+          <div class="hero-ctas">
+            <a href="#" class="btn btn-primary">Book Appointment Now →</a>
+            <a href="tel:+18014141234" class="btn btn-outline">📞 (801) 414-1234</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <h3>15+</h3>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat">
+              <h3>5,000+</h3>
+              <p>Happy Patients</p>
+            </div>
+            <div class="stat">
+              <h3>4.9★</h3>
+              <p>Google Rating</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="hero-image-main">
+            <img src="https://images.unsplash.com/photo-1551884170-09fb70a3a2ed?w=800&h=600&fit=crop" alt="Eye exam at Hidden Valley Eye Care">
+          </div>
+          <div class="hero-image-float">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=100&h=100&fit=crop" alt="Dr. Jason Mackay">
+            <div class="hero-float-text">
+              <h4>Dr. Jason Mackay</h4>
+              <p>Doctor of Optometry</p>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Our Services</div>
+        <h2>Comprehensive Eye Care for the Whole Family</h2>
+        <p>From routine exams to specialized treatments, we provide everything your eyes need.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/></svg>
+          </div>
+          <h3>Comprehensive Eye Exams</h3>
+          <p>Thorough vision testing and eye health evaluation using the latest diagnostic technology.</p>
+          <a href="#">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <h3>Contact Lens Fitting</h3>
+          <p>Expert fitting for all types of contact lenses, including specialty and hard-to-fit prescriptions.</p>
+          <a href="#">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12z"/></svg>
+          </div>
+          <h3>Computer Vision Care</h3>
+          <p>Relief from digital eye strain with specialized lenses and treatment plans.</p>
+          <a href="#">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 8c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/></svg>
+          </div>
+          <h3>Designer Frames</h3>
+          <p>Browse our curated collection of premium eyewear at Framed Optical.</p>
+          <a href="#">View collection →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Doctor -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=750&fit=crop" alt="Dr. Jason Mackay">
+          <div class="about-badge">
+            <h4>15+</h4>
+            <p>Years of<br>Excellence</p>
+          </div>
+        </div>
+        <div class="about-content">
+          <h2>Meet <span>Dr. Jason Mackay</span></h2>
+          <p>Dr. Mackay completed his undergraduate studies at Brigham Young University-Idaho with a BS in Exercise Physiology before earning his Doctor of Optometry degree from Southern California College of Optometry.</p>
+          <p>With over 15 years of experience serving the Draper community, Dr. Mackay is passionate about providing personalized eye care that goes beyond just checking your vision. He takes the time to understand your lifestyle, work environment, and visual needs to create customized solutions.</p>
+          <p>Whether you need a routine exam, contact lens fitting, or treatment for an eye condition, Dr. Mackay and his dedicated team are here to help you see your best.</p>
+          <div class="about-credentials">
+            <div class="credential">✓ Doctor of Optometry</div>
+            <div class="credential">✓ SCCO Graduate</div>
+            <div class="credential">✓ Licensed in Utah</div>
+            <div class="credential">✓ 15+ Years Experience</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="reviews-header">
+        <div>
+          <div class="section-badge">Patient Reviews</div>
+          <h2>What Our Patients Say</h2>
+        </div>
+        <div class="reviews-score">
+          <div class="score-big">4.9</div>
+          <div class="score-details">
+            <div class="stars">★★★★★</div>
+            <p>Based on 120+ reviews</p>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer">
+              <div class="reviewer-avatar">RD</div>
+              <div class="reviewer-info">
+                <h4>Rachel D.</h4>
+                <p>Verified Patient</p>
+              </div>
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+          <blockquote>"Hidden Valley Eye Care is the absolute best! Their staff is very friendly and attentive. I always looked forward to going. They helped pick out my perfect frames & always let me come in to get them adjusted. Absolutely recommend 10/10!"</blockquote>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer">
+              <div class="reviewer-avatar">MK</div>
+              <div class="reviewer-info">
+                <h4>Michael K.</h4>
+                <p>Verified Patient</p>
+              </div>
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+          <blockquote>"Dr. Mackay is thorough, professional, and genuinely cares about his patients. The office is modern and clean. Best eye care experience I've had in Utah. Highly recommend!"</blockquote>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer">
+              <div class="reviewer-avatar">SL</div>
+              <div class="reviewer-info">
+                <h4>Sarah L.</h4>
+                <p>Verified Patient</p>
+              </div>
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+          <blockquote>"Fun job, nice environment, doctors are great. The facility is modern and nice. Products are great as well. The whole team makes you feel welcome from the moment you walk in."</blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brands -->
+  <section class="brands">
+    <div class="container">
+      <h3>Premium Frame Brands We Carry</h3>
+      <div class="brands-grid">
+        <div class="brand-logo">Ray-Ban</div>
+        <div class="brand-logo">Oakley</div>
+        <div class="brand-logo">Gucci</div>
+        <div class="brand-logo">Prada</div>
+        <div class="brand-logo">Tom Ford</div>
+        <div class="brand-logo">Coach</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Insurance -->
+  <section class="insurance">
+    <div class="container">
+      <div class="insurance-inner">
+        <h3>Insurance Plans We Accept</h3>
+        <div class="insurance-logos">
+          <div class="insurance-logo">VSP</div>
+          <div class="insurance-logo">EyeMed</div>
+          <div class="insurance-logo">Medicare</div>
+          <div class="insurance-logo">Blue Cross</div>
+          <div class="insurance-logo">United Healthcare</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to See Clearly?</h2>
+      <p>Schedule your comprehensive eye exam today and experience the Hidden Valley difference.</p>
+      <a href="#" class="btn">Book Your Appointment Now →</a>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section class="location" id="location">
+    <div class="container">
+      <div class="location-inner">
+        <div class="location-info">
+          <h2>Visit Our Office</h2>
+          <div class="location-details">
+            <div class="location-item">
+              <div class="location-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </div>
+              <div>
+                <h4>Address</h4>
+                <p>1147 Draper Pkwy<br>Draper, UT 84020</p>
+                <a href="https://maps.google.com/?q=1147+Draper+Pkwy+Draper+UT" target="_blank">Get Directions →</a>
+              </div>
+            </div>
+            <div class="location-item">
+              <div class="location-icon">
+                <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              </div>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:+18014141234">(801) 414-1234</a></p>
+                <p style="font-size:0.85rem; color: var(--gray-600);">Call or text us!</p>
+              </div>
+            </div>
+          </div>
+          
+          <h4 style="font-weight:700; margin-bottom:16px; color: var(--primary-dark);">Office Hours</h4>
+          <div class="hours-grid">
+            <div class="hours-row"><span>Monday</span><span>9:00am - 5:30pm</span></div>
+            <div class="hours-row"><span>Tuesday</span><span>9:00am - 2:00pm</span></div>
+            <div class="hours-row"><span>Wednesday</span><span>9:00am - 5:30pm</span></div>
+            <div class="hours-row"><span>Thursday</span><span>10:00am - 7:00pm</span></div>
+            <div class="hours-row"><span>Friday</span><span>9:00am - 5:30pm</span></div>
+            <div class="hours-row"><span>Sat - Sun</span><span>Closed</span></div>
+          </div>
+        </div>
+        <div class="location-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3033.8!2d-111.8636!3d40.5249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDMxJzI5LjYiTiAxMTHCsDUxJzQ5LjAiVw!5e0!3m2!1sen!2sus!4v1" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h3>Hidden Valley Eye Care</h3>
+          <p>Providing personalized eye care and premium eyewear to the Draper community since 2010.</p>
+          <a href="#" class="btn btn-primary">Book Appointment</a>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Eye Exams</a></li>
+            <li><a href="#">Contact Lenses</a></li>
+            <li><a href="#">Computer Vision</a></li>
+            <li><a href="#">Designer Frames</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Doctor</a></li>
+            <li><a href="#">Patient Forms</a></li>
+            <li><a href="#">Insurance</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+18014141234">(801) 414-1234</a></li>
+            <li><a href="#">info@hveyecare.com</a></li>
+            <li>1147 Draper Pkwy</li>
+            <li>Draper, UT 84020</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Hidden Valley Eye Care & Framed Optical. All rights reserved.</p>
+        <p>Website by <a href="https://gullstack.com" style="color: var(--accent-light);">GullStack</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky CTA -->
+  <div class="mobile-cta">
+    <a href="tel:+18014141234" class="btn btn-primary">📞 Call Now — (801) 414-1234</a>
+  </div>
+
+</body>
+</html>
